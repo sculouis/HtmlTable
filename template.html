@@ -1,0 +1,105 @@
+<div>
+	<script type="text/template" class="template" id="prDetail">
+			<% for (var i = 0; i < PRDetails.length; i++) { %>
+			<tbody PRDetailID="<%= PRDetails[i].PRDetailID %>" QDetailID="<%= PRDetails[i].QDetailID %>">
+			<tr id="detailRow1">
+				<td rowspan="200">
+					<input type="checkbox" class="DetailCheckbox" />
+				</td>
+				<td class="prNum" name=
+				<%= "PRDetails[" +  i +  "].PRNum" %>>
+					<%= PRDetails[i].PRNum %>
+				</td>
+				<td class="qoNum" name=
+				<%= "PRDetails[" +  i +  "].QuoteNum" %>>
+					<%= PRDetails[i].QuoteNum %>
+				</td>
+				<td name=
+				<%= "PRDetails[" +  i +  "].CategoryName" %>>
+					<%= PRDetails[i].CategoryName %>
+				</td>
+				<td name=
+				<%= "PRDetails[" +  i +  "].ItemDescription" %>>
+					<%= PRDetails[i].ItemDescription %>
+				</td>
+				<td >
+					<input name=<%= "PRDetails[" +  i +  "].Sum" %>>
+					</input>
+				</td>
+				<td name=
+				<%= "PRDetails[" +  i +  "].UomName" %>>
+					<%= PRDetails[i].UomName %>
+				</td>
+				<td>
+					<div class="ExpandDetail">
+						<i class="toggleArrow fas fa-angle-down fa-lg"></i>
+					</div>
+				</td>
+				<td class="Price" style="display:none" name=
+				<%= "PRDetails[" +  i +  "].Price" %>>
+					<%= PRDetails[i].Price %>
+				</td>
+			</tr>
+			<tr style="display:none">
+				<th class="th-title-1">幣別</th>
+				<th class="th-title-1" colspan="2">原幣報價單價</th>
+				<th class="th-title-1">報價經辦</th>
+				<th class="th-title-1" colspan="3">發票管理人</th>
+			</tr>
+			<tr style="display:none" id="detailRow2">
+				<td name=
+				<%= "PRDetails[" +  i +  "].CurrencyCode" %>>
+					<%= PRDetails[i].CurrencyCode %>
+				</td>
+				<td colspan="2" name=
+				<%= "PRDetails[" +  i +  "].ForigenPrice" %>>
+					<%= PRDetails[i].ForigenPrice %>
+				</td>
+				<td name=
+				<%= "PRDetails[" +  i +  "].PurchaseEmpName" %>>
+					<%= PRDetails[i].PurchaseEmpName + '(' + PRDetails[i].PurchaseEmpNum + ')' %>
+				</td>
+				<td colspan="3" class="invoiceEmp" empName="<%= PRDetails[i].InvoiceEmpName %>" empNum="<%= PRDetails[i].InvoiceEmpNum %>">
+					<%= PRDetails[i].InvoiceEmpName + '(' + PRDetails[i].InvoiceEmpNum + ')' %>
+				</td>
+			</tr>
+			<tr style="display:none">
+				<th class="th-title-1" colspan="2">送貨數量</th>
+				<th class="th-title-1" colspan="2">掛帳單位</th>
+				<th class="th-title-1" colspan="3">
+					收貨單位
+					<div class="float-right ExpandInnerDetail">
+						<a><span>展開</span></a>
+					</div>
+				</th>
+			</tr>
+			<tr style="display:none" class="InnerDetailShowBar">
+				<td colspan="7" class="text-center">
+					<b class="undone-text">請展開檢視更多項目...</b>
+				</td>
+			</tr>
+			<% for (var j = 0; j < PRDetails[i].PRDeliverys.length; j++){%> 
+				<tr style="display:none" prdeliveryid="<%= PRDetails[i].PRDeliverys[j].PRDeliveryID %>">
+					<td colspan="2" name=<%= `PRDetails[${i}].PRDeliverys[${j}].Quantity` %> ><input type="checkbox" class="InnerDetailCheckbox" />
+						<%= PRDetails[i].PRDeliverys[j].Quantity %>
+					</td>
+					<td colspan="2"> 
+						<select id=
+						<%= "PRDetails[" +  i +  "].PRDeliverys[" +j + "].ChargeDept" %>>
+						<option>301234</option>
+						  <option>304321</option>
+						</select>
+					</td>
+					<td colspan="3" name=
+					<%= "PRDetails[" +  i +  "].PRDeliverys[" +j + "].RcvDept" %>>
+						<%= PRDetails[i].PRDeliverys[j].RcvDept %>
+					</td>
+				</tr>
+		<% };%>
+	</tbody>
+	<% };%>
+	</script>
+	<script type="text/template" class="template" id="another">
+		<p><%= test %></p>
+	</script>
+</div>

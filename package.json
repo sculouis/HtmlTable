@@ -1,0 +1,24 @@
+{
+  "name": "htmltable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "accounting": "0.4.1",
+    "bind.js": "1.1.1",
+    "font-awesome": "4.7.0",
+    "jquery": "1.12.4",
+    "underscore": "1.9.1"
+  },
+  "devDependencies": {
+    "@types/accounting": "0.4.1",
+    "@types/jquery": "3.3.10",
+    "@types/underscore": "1.8.9",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

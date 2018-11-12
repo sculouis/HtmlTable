@@ -1,2 +1,0 @@
-# HtmlTable
-Created with CodeSandbox

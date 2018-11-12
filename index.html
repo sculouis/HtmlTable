@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Derek's Boot</title>
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<!--
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="box" id="app">
+			<div class="row">
+				<div class="col-sm-12 content-box">
+					<div class="w100 title m-top10">
+						<b class="float-left">請購單明細</b>
+					</div>
+					<table class="table table-hover m-top10 table-bordered tbody-hover-outline">
+						<thead>
+							<tr class="sucess">
+								<th class="th-title w5">選擇</th>
+								<th class="th-title w10">請購單號</th>
+								<th class="th-title w10">報價單號</th>
+								<th class="th-title">採購分類</th>
+								<th class="th-title w25">品名描述</th>
+								<th class="th-title w10">數量</th>
+								<th class="th-title w10">單位</th>
+								<th class="th-title w10">
+									最低報價
+									<div class="ExpandAllDetail">
+										<i class="toggleArrow fas fa-angle-double-down fa-lg"></i>
+									</div>
+								</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary" id="run">CheckTable</button>
+		<button type="button" class="btn btn-success" id="showForm">ShowForm</button>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
+		<script src="src/index.js">
+		</script>
+</body>
+
+</html>

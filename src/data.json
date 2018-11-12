@@ -1,0 +1,68 @@
+{"PONum":"PO20180920001",
+ "Subject":"測試表單",
+  "PRDetails":[
+  {
+    "PRDetailID": 1,
+    "QDetailID": 1,
+    "PRID": "A12334444",
+    "PRNum": "PR201808120001",
+    "QuoteNum": "QO201804260006",
+    "CategoryName": "辦公桌",
+    "ItemDescription": "Office",
+    "Sum": "100",
+    "UomName": "EA",
+    "Price": 300,
+    "CurrencyCode": "TWD",
+    "ForigenPrice": 30,
+    "PurchaseEmpName": "張三",
+    "PurchaseEmpNum": "17654",
+    "InvoiceEmpName": "李四",
+    "InvoiceEmpNum": "654321",
+    "PRDeliverys": [
+      {
+        "PRDeliveryID": 1,
+        "Quantity": 1,
+        "ChargeDept": "301234",
+        "RcvDept": "304321"
+      },
+      {
+        "PRDeliveryID": 2,
+        "Quantity": 1,
+        "ChargeDept": "304321",
+        "RcvDept": "304321"
+      }
+    ]
+  },
+  {
+    "PRDetailID": 2,
+    "QDetailID": 2,
+    "PRID": "A12334445",
+    "PRNum": "PR201808120002",
+    "QuoteNum": "QO201804260007",
+    "CategoryName": "電腦",
+    "ItemDescription": "Computer",
+    "Sum": "200",
+    "UomName": "EA",
+    "Price": 300,
+    "CurrencyCode": "TWD",
+    "ForigenPrice": 30,
+    "PurchaseEmpName": "李小一",
+    "PurchaseEmpNum": "17654",
+    "InvoiceEmpName": "王大同",
+    "InvoiceEmpNum": "654321",
+    "PRDeliverys": [
+      {
+        "PRDeliveryID": 3,
+        "Quantity": 1,
+        "ChargeDept": "301234",
+        "RcvDept": "304321"
+      },
+      {
+        "PRDeliveryID": 4,
+        "Quantity": 1,
+        "ChargeDept": "301234",
+        "RcvDept": "304321"
+      }
+    ]
+  }
+]}
